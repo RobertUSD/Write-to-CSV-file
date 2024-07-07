@@ -1,0 +1,17 @@
+import csv
+
+def write_csv(filename, data):
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
+
+# Пример использования
+filename = 'output.csv'
+data_to_write = [
+    ['Имя', 'Возраст', 'Город'],
+    ['Иван', '30', 'Москва'],
+    ['Мария', '25', 'Санкт-Петербург'],
+    ['Петр', '45', 'Новосибирск']
+]
+write_csv(filename, data_to_write)
+print("Данные записаны в файл", filename)
