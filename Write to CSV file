@@ -5,13 +5,13 @@ def write_csv(filename, data):
         writer = csv.writer(file)
         writer.writerows(data)
 
-# Пример использования
+# Example usage
 filename = 'output.csv'
 data_to_write = [
-    ['Имя', 'Возраст', 'Город'],
-    ['Иван', '30', 'Москва'],
-    ['Мария', '25', 'Санкт-Петербург'],
-    ['Петр', '45', 'Новосибирск']
+    ['Name', 'Age', 'City'],
+    ['Ivan', '30', 'Moscow'],
+    ['Maria', '25', 'Saint Petersburg'],
+    ['Peter', '45', 'Novosibirsk']
 ]
 write_csv(filename, data_to_write)
-print("Данные записаны в файл", filename)
+print("Data has been written to", filename)
